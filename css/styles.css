@@ -1,1 +1,90 @@
-body {}
+ /* цвет основного текста #000000 */
+/* вторичный цвет текста rgba(0, 0, 0, 0.8)  */
+
+/* белый цвет #FFFFFF */
+/* акценты #18A0FB */
+/* вторичный цвет фона #F5F5F5 */
+ 
+ :root {
+    --primary-text-color: rgba(0, 0, 0, 0.8);
+    --title-text-color: black;
+    --accent-color: #18A0FB;
+    --primary-white-color:#ffffff 
+    
+ }
+ 
+ body {
+    background:var(--primary-white-color);
+    color: var(--primary-text-color);
+}
+
+.list {
+    list-style: none;
+}
+
+
+.logo {
+    color: var(--title-text-color);
+
+}
+
+/* ми перебили вар на другой акцент внутри переменной  --new-accent: red;
+    color: var(--accent-color) поменяли на новую*/
+.logo:hover {
+    --new-accent: red;
+    color: var(--new-accent);
+}
+
+
+/* site nav */
+.site-nav .link{
+    color: var(--accent-color)
+    ;
+}
+.site-nav .link:hover, .site-nav .link:focus {
+    color: var(--title-text-color);}
+
+.clients > .section-title {
+    color: tomato;
+}
+
+/* hero */
+.hero-title {
+    color: var(--title-text-color);
+}
+
+/* section */
+.section-title {
+    color: var(--title-text-color);
+
+}
+
+/* features селектор потомка*/
+.feature-list  .title {
+    color: var(--title-text-color);
+}
+
+
+
+/* works */
+.work-list .title {
+    color: var(--title-text-color)
+}
+
+/* class buttom - это кнопки ссылочки : типа регестрация и тд  перебили засчет того,что дали дополнительный класс прймери*/
+.button {
+    color: var(--title-text-color);
+    background-color: var(--primary-white-color);
+}
+
+.button.primary {
+    color: var(--primary-white-color); 
+    background-color: var(--accent-color); 
+     
+} 
+
+.button.secondary {
+    color: var(--accent-color); 
+    background-color: var(--primary-white-color); 
+ 
+}
