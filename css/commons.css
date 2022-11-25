@@ -1,0 +1,28 @@
+:root {
+    --primary-text-color: rgba(0, 0, 0, 0.8);
+    --title-text-color: black;
+    --accent-color: #18A0FB;
+    --primary-white-color:#ffffff 
+    
+ }
+ 
+ body {
+    background:var(--primary-white-color);
+    color: var(--primary-text-color);
+ }
+
+    /* site nav */
+.site-nav .link{
+    color: var(--accent-color)
+    ;
+}
+.site-nav .link:hover, .site-nav .link:focus {
+    color: var(--title-text-color);}
+
+    .site-nav .link.current {
+        color: var(--title-text-color);
+    }
+
+.clients > .section-title {
+    color: tomato;
+}

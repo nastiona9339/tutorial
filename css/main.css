@@ -44,6 +44,10 @@
 .site-nav .link:hover, .site-nav .link:focus {
     color: var(--title-text-color);}
 
+    .site-nav .link.current {
+        color: var(--title-text-color);
+    }
+
 .clients > .section-title {
     color: tomato;
 }
