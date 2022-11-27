@@ -13,18 +13,27 @@
     
  }
  
- body {
+  body {
     background:var(--primary-white-color);
     color: var(--primary-text-color);
+    font-family: Montserrat, sans-serif;
+    font-size: 18px;
+    line-height: 1.67;
 }
 
 .list {
     list-style: none;
 }
 
-
+/* logo */
 .logo {
     color: var(--title-text-color);
+    font-family: Comfortaa,cursive; 
+
+font-size: 28px;
+line-height: 1.14;
+
+text-decoration: none;
 
 }
 
@@ -40,6 +49,11 @@
 .site-nav .link{
     color: var(--accent-color)
     ;
+font-weight: 500;
+font-size: 15px;
+line-height: 1.2;
+text-decoration: none;
+
 }
 .site-nav .link:hover, .site-nav .link:focus {
     color: var(--title-text-color);}
@@ -55,30 +69,55 @@
 /* hero */
 .hero-title {
     color: var(--title-text-color);
+    
+font-weight: 400;
+font-size: 56px;
+line-height: 1.43;
+text-align: center;
 }
 
 /* section */
 .section-title {
     color: var(--title-text-color);
+ 
+font-weight: 400;
+font-size: 48px;
+line-height: 1.5;
+text-align: center;
 
 }
 
-/* features селектор потомка*/
-.feature-list  .title {
+.section-description {
+    font-weight: 400;
+font-size: 36px;
+line-height: 1.39;
+}
+
+/* features селектор потомка добавили works лист, потому что оденаковіе характеристики*/
+.feature-list .title,
+.work-list .title {
     color: var(--title-text-color);
-}
+ 
+font-weight: 700;
+font-size: 24px;
+line-height: 1.5;
 
+
+letter-spacing: -0.015em;
+}
 
 
 /* works */
-.work-list .title {
-    color: var(--title-text-color)
-}
+
 
 /* class buttom - это кнопки ссылочки : типа регестрация и тд  перебили засчет того,что дали дополнительный класс прймери*/
 .button {
     color: var(--title-text-color);
     background-color: var(--primary-white-color);
+    font-weight: 500;
+font-size: 1.2;
+line-height: 18px;
+text-decoration: none;
 }
 
 .button.primary {
