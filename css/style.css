@@ -1,0 +1,108 @@
+body {
+    font-family: 'Open Sans', sans-serif;    
+}
+
+
+.link {
+text-decoration:none
+}
+
+.list
+{
+list-style: none;
+}
+
+/* ------HEADER---------- */
+
+header {
+    background-color: gray;
+}
+.header-link {
+
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.1em;
+    color: #FFFFFF;
+}
+
+.header-link:hover, .header-link:focus {
+    color: #FF6C00;
+}
+
+.header-tel {
+    
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.1em;
+    color: #FFFFFF;
+}
+
+.header-btn {
+    font-family: inherit;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.header-btn:hover,
+.header-btn:focus {
+    background-color: #FF6C00;
+
+}
+
+/* ------SECTION HERO---------- */
+.hero {
+    background-color: #737373;
+}
+ 
+.subtitle {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    text-transform: uppercase;
+    color: rgba(157, 164, 189, 0.6);
+}
+.title {
+    font-family: 'Raleway', sans-serif;
+    font-size: 72px;
+    line-height: 1.18;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+}
+.hero-text {
+    font-size: 18px;
+    line-height: 1.67x;
+    letter-spacing: 0.02em;
+    color: #9DA4BD;
+}
+.hero-links {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    letter-spacing: 0.2em;
+    color: #303030;
+}
+
+.hero-links:hover, .hero-links:focus {
+    color: #FF6C00;
+}
+
+/* ------ABOUY---------- */
+
+.about {
+}
+.about-pretitle {
+}
+.about-title {
+}
+.about-after-title {
+}
+.aboyt-text {
+}
+.about-btn {
+}
