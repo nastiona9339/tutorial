@@ -25,6 +25,14 @@
     list-style: none;
 }
 
+/* 3 модуль 1 занятия контейнеры */
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1240px;
+    outline: 2px solid tomato;
+}
+
 /* logo */
 .logo {
     color: var(--title-text-color);
@@ -44,6 +52,10 @@ text-decoration: none;
     color: var(--new-accent);
 }
 
+/* 3 модуль 1 заняттия КОНТЕЙНЕРЫ */
+.page-header {
+    background-color: #ccc;
+}
 
 /* site nav */
 .site-nav .link{
@@ -111,23 +123,70 @@ letter-spacing: -0.015em;
 
 
 /* class buttom - это кнопки ссылочки : типа регестрация и тд  перебили засчет того,что дали дополнительный класс прймери*/
+
+/* 3 мод 1 зан - 1.бордер и 2.паддинг для кнопки , 3.дисплей инлайн блок для кнопки 4.ширина для кнопки 5.текст елайн -центр для текста, чтоби текст кнопок внутри стоял по центру */
+
+/* 3 мод 1 занят задали бордер (рамку) для кнопки, цвет транспарент - прозрачний цвет*/
 .button {
+    display: inline-block;
+    border: 1px solid transparent; 
+    border-radius: 6px;
+    padding: 11px 34px;
+    min-width: 130px;
+
     color: var(--title-text-color);
     background-color: var(--primary-white-color);
+
     font-weight: 500;
-font-size: 1.2;
-line-height: 18px;
-text-decoration: none;
+    font-size: 1.2;
+    line-height: 18px;
+    text-decoration: none;
+    text-align: center;
+
 }
+
 
 .button.primary {
     color: var(--primary-white-color); 
     background-color: var(--accent-color); 
-     
+         
 } 
 
+
+/* 3 мод 1 занят задали бордер (рамку) для кнопки транспарент више общую, применили бордер калер для рамки на синий */
 .button.secondary {
+    border-color: var(--accent-color);
     color: var(--accent-color); 
     background-color: var(--primary-white-color); 
- 
 }
+
+/* робота с репетой */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  line-height: 1.5;
+  background-color: #f9f9fd;
+}
+
+.text {
+  background-color: tomato;
+  color: white;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-left: 10px solid #2196f3;
+  border-right: 10px solid #2196f3;
+
+  /* Let's give the inline <span> element the top
+      and bottom margins, and borders that don't work.   */
+  padding-top: 100px;
+  padding-bottom: 100px;
+  border-top: 10px solid #2196f3;
+  border-bottom: 10px solid #2196f3;
+}
+
+
