@@ -9,7 +9,10 @@
     --primary-text-color: rgba(0, 0, 0, 0.8);
     --title-text-color: black;
     --accent-color: #18A0FB;
-    --primary-white-color:#ffffff 
+    --primary-white-color:#ffffff;
+
+    /* 3 мод 1 зан. Дали для секции, которая с разными фонами дополнит фон */
+    --secondary-bg-color: #f5f5f5;
     
  }
  
@@ -21,16 +24,23 @@
     line-height: 1.67;
 }
 
+
+/* 3 зан 1 лек сбросили автоматические марджаны и паддинги от бразера во всех списках  */
 .list {
     list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
-/* 3 модуль 1 занятия контейнеры */
+/* 3 модуль 1 занятия контейнеры (контейнер не должен иметь своих паддингов его задача обернуть и центрировать горизонтально, вертикально он ничего не должен делать) */
+/* 3 модуль 1 занят Дали паддинги целим кантейнирам  */
 .container {
     margin-left: auto;
     margin-right: auto;
     width: 1240px;
     outline: 2px solid tomato;
+    padding-right: 20px;
+    padding-left: 20px;
 }
 
 /* logo */
@@ -78,36 +88,80 @@ text-decoration: none;
     color: tomato;
 }
 
-/* hero */
+/* hero 
+3 лекция 1 зан - 1.сбрасываем марджаны 2.отодвигаем нижн марджаном заголовок от кнопки
+ */
+
+ /* задали герою текст - елайн */
+
+ .hero {
+    text-align: center;
+ }
+
 .hero-title {
+    margin-top: 0;
+    margin-bottom: 40px;
+   
     color: var(--title-text-color);
     
 font-weight: 400;
 font-size: 56px;
 line-height: 1.43;
+
 text-align: center;
+
+
 }
 
 /* section */
+/* 3 мод 1 зан убрали марджан вертикальный, 2.нижний марджан */
+/* 3 мод 1 зан добавляем селектор секции и gflbyub по краям секции, а не марджаны , потому что нам нужно залить контент вглубь, а паддинги распостраняются на весь фон */
+/* 3 мод 1 зан задаем секции но - паддинг */
+
+.section.no-padding {
+    padding-top: 0%;
+    padding-bottom: 0;
+}
+
+.section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
 .section-title {
+    margin-top: 0%;
+    margin-bottom: 60px;
+
     color: var(--title-text-color);
  
 font-weight: 400;
 font-size: 48px;
 line-height: 1.5;
-text-align: center;
 
 }
 
+
+/* Дали центрирование тем отделам, которые нужнались секции Примеры работ и клиенты  */
+.section-title.centred {
+    text-align: center;
+}
+
+/* 3 мод 1 зан дали марджаны отступ от параграфа к фото */
 .section-description {
-    font-weight: 400;
+
+margin-top: 0;
+margin-bottom: 80px;
 font-size: 36px;
 line-height: 1.39;
 }
 
+/* FUTURES and EXAMPLES*/
 /* features селектор потомка добавили works лист, потому что оденаковіе характеристики*/
+
+/* 3 мод 1 зан сбрасіваем марджині у заголовка по умолчянию */
 .feature-list .title,
 .work-list .title {
+    margin-top: 0;
+    margin-bottom: 24px;
     color: var(--title-text-color);
  
 font-weight: 700;
@@ -118,10 +172,31 @@ line-height: 1.5;
 letter-spacing: -0.015em;
 }
 
+/* WORKS */
+/* дополнительный класс в секцию екзампл для паддингов */
+/* подсвитить все четные серым цвето */
+/* задали бекграунт цвет для каждой второй секции и для основной */
 
-/* works */
 
 
+.work-list > .item {
+padding-top: 80px;
+padding-bottom: 80px;
+background-color: var(--primary-white-color);
+
+}
+
+.work-list > .item:nth-child(2n) {
+    background-color: var(--secondary-bg-color);
+}
+
+.feature-list p {
+    margin-top: 0;
+    margin-bottom: 32px;
+}
+
+
+/* button */
 /* class buttom - это кнопки ссылочки : типа регестрация и тд  перебили засчет того,что дали дополнительный класс прймери*/
 
 /* 3 мод 1 зан - 1.бордер и 2.паддинг для кнопки , 3.дисплей инлайн блок для кнопки 4.ширина для кнопки 5.текст елайн -центр для текста, чтоби текст кнопок внутри стоял по центру */
