@@ -1,300 +1,386 @@
-
 :root {
-    --primary-header-color: #303030;
-    --secondary-header-color: #FFFFFF;
-    --primary-link-color: #ffffff;
-    --accent-color: #FF6C00;
+  --primary-header-color: #303030;
+  --secondary-header-color: #ffffff;
+  --primary-link-color: #ffffff;
+  --accent-color: #ff6c00;
+
+  --main-font: "Open Sans", sans-serif;
+
+  --main-margin: 20px;
 }
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0px;
+}
+
+ul,
+ol {
+  margin: 0px;
+  padding-left: 0px;
+}
+
+button {
+  cursor: pointer;
+}
+
+/* 3мод 1 зан - Шаг 4 задаем инлайн картинкам - дисплей блок ,потому что инлайн добавляет зазорі между картинками, для обьемніх букв*/
+
+img {
+  display: block;
+}
+
 body {
-    font-family: 'Open Sans', sans-serif;
-        /* Зачастую font famaly, font style, иногда fant weighn наслідується  */
+  font-family: var(--main-font);
+  /* Зачастую font famaly, font style, иногда fant weighn наслідується  */
 
-        /* задают на боди властивості тексту, який найбільше використовується на сайті: його фонт вейт, фон сайз, лайн хейт */
+  /* задают на боди властивості тексту, який найбільше використовується на сайті: його фонт вейт, фон сайз, лайн хейт */
 
-        /* посидання наслідують все від боді */
+  /* посидання наслідують все від боді */
 
-        /* " ! НЕ НАСЛІДУВАТИ ці значення можуть ЗАголовки, кнопочки, тому що браузер надає свої стилі за замовчуванням - це треба виправити и додати все - фонт сайз , фонт вейт, фонт хейт,  і поставити значення inherit дл фонт фемілі" */
+  /* " ! НЕ НАСЛІДУВАТИ ці значення можуть ЗАголовки, кнопочки, тому що браузер надає свої стилі за замовчуванням - це треба виправити и додати все - фонт сайз , фонт вейт, фонт хейт,  і поставити значення inherit дл фонт фемілі" */
 
-    /* чтобы убедиться или наследуется просто переходим в раздер разработчика в раздель styles и смотрем elements styles и inhereted from .... Если что-то будет повторятся, просто его не записыввем во властивости елемента , потому что он и так наследуется с боди */
+  /* чтобы убедиться или наследуется просто переходим в раздер разработчика в раздель styles и смотрем elements styles и inhereted from .... Если что-то будет повторятся, просто его не записыввем во властивости елемента , потому что он и так наследуется с боди */
 }
 
 /* -------------UTILITARIAN CLASSES---------- */
+/* 3мод 1 зан - шаг 1 */
+/* контейнер успадковує бокс сайзинг бордер бокс, тому якщо ми додаємо паддинги 1170 це буде розмір разом з паддігнами, тому 1170 ми змінюємо на 1200 */
 
+/* марджин 0 ауто, чтобы контейнер центрировался по центру  */
+.container {
+  width: 1200px;
+  padding: 0px 15px;
+  margin: 0 auto;
+}
 .link {
-text-decoration:none
+  text-decoration: none;
 }
 
-.list
-{
-list-style: none;
+.list {
+  list-style: none;
 }
 
 .btn {
-    font-family: inherit;
-    font-weight: 600;
-    font-size: 12px;
-    line-height: 1.33;
-    letter-spacing: 0.09em;
-    text-transform: uppercase;
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
 }
 .btn:hover,
 .btn:focus {
-    background-color: var(--accent-color);
-
+  background-color: var(--accent-color);
 }
 .pre-title {
-    font-weight: 600;
-    font-size: 11px;
-    line-height: 1.36;
-    text-transform: uppercase;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  text-transform: uppercase;
 }
 .title {
-    font-family: 'Raleway', sans-serif;
-    font-size: 72px;
-    line-height: 1.18;
-    letter-spacing: 0.05em;
+  font-family: "Raleway", sans-serif;
+  font-size: 72px;
+  line-height: 1.18;
+  letter-spacing: 0.05em;
 }
 
 .after-title {
-    font-size: 18px;
-    line-height: 1.67;
-    letter-spacing: 0.02em;
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
 }
 
 .visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    white-space: nowrap;
-    overflow: hidden;
-  }
-
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  overflow: hidden;
+}
 
 /* ------HEADER---------- */
 
-header {
-    background-color: gray;
+.header {
+  background-color: gray;
+}
+
+/* 3мод 1 зан - шаг 2 */
+/* задаем паддинг найвищ елементу */
+/* а у нас инлайновий - поєтому задаем дисплей блок  */
+.header-logo {
+  padding: 32px 0;
+  display: block;
 }
 .header-link {
-
-    font-weight: 600;
-    font-size: 12px;
-    line-height: 1.33;
-    letter-spacing: 0.1em;
-    color: var(--primary-link-color);
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.1em;
+  color: var(--primary-link-color);
 }
 
 .header-link:hover,
 .header-link:focus {
-    color: var(--accent-color)
+  color: var(--accent-color);
 }
 
 .header-tel {
-    
-    font-weight: 600;
-    font-size: 12px;
-    line-height: 1.33;
-    letter-spacing: 0.1em;
-    color: var(--primary-link-color);
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.1em;
+  color: var(--primary-link-color);
 }
 
 .header-btn {
-    color: #FFFFFF;
+  color: #ffffff;
 }
 
 /* ------SECTION HERO---------- */
+
+/* мод 3 зан 1 шаг 3  */
+/* дописуемо класс хиро райт и дописіваем паддинг к елементам ,чтобі оторвать его он ютуба и инстаграма */
+
+/* виносимо общий марджин между едеменами в змінну, а також задаємо марджин боттон всем елементам в єтом контейнере - херо при тайтл, херо тайтл   */
+
+/* херо текст задаем макс видс - чтобі разбить на 2 строчки */
 .hero {
-    background-color: #737373;
+  background-color: #737373;
 }
- 
-.sub-title {
-    color: rgba(157, 164, 189, 0.6);
+
+.hero-right {
+  padding: 184px 526px 208px 100px;
+}
+.hero-pre-title {
+  color: rgba(157, 164, 189, 0.6);
+  margin-bottom: var(--main-margin);
 }
 .hero-title {
-    
-    color: var(--secondary-header-color);
+  color: var(--secondary-header-color);
+  margin-bottom: var(--main-margin);
+  font-size: 72px;
 }
 .hero-text {
-    font-size: 18px;
-    line-height: 1.67x;
-    letter-spacing: 0.02em;
-    color: #9DA4BD;
+  font-size: 18px;
+  line-height: 1.67x;
+  letter-spacing: 0.02em;
+  color: #9da4bd;
+  max-width: 370px;
 }
 .hero-links {
-    font-weight: 600;
-    font-size: 11px;
-    line-height: 1.36;
-    letter-spacing: 0.2em;
-    color: #303030;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.2em;
+  color: #303030;
 }
 
 .hero-links:hover,
 .hero-links:focus {
-    color: var(--accent-color);
+  color: var(--accent-color);
 }
 
 /* ------ABOUT---------- */
 
+/* 3 мод 1 зан шаг 5 отріваем засчет внтреннпадинга вот єтот белій промежуток в контейнере делаем єто на классе ебаут  */
 
+.about {
+  padding: 120px 0;
+}
 .about-pre-title {
-    color: #303030;
+  color: #303030;
+  margin-bottom: var(--main-margin);
 }
 .about-title {
-    color: var(--primary-header-color);
+  color: var(--primary-header-color);
+  margin-bottom: var(--main-margin);
 }
 .about-after-title {
-    color: #555555;
+  color: #555555;
+  margin-bottom: var(--main-margin);
 }
 .about-text {
-    font-size: 14px;
-    line-height: 1.86;
-    letter-spacing: 0.02em;
-    color: #555555;
+  font-size: 14px;
+  line-height: 1.86;
+  letter-spacing: 0.02em;
+  color: #555555;
+  margin-bottom: 42px;
 }
 .about-btn {
-    color: #303030;
+  color: #303030;
 }
 
-
-
 /* ------PRICES---------- */
+/* 3 мод 1 зан - 6 шаг  тотже алгорим что и вшаге 5 - паддинг на общую секцию от верх и нижн елемента, марджині-боттон между елементами */
 
+/* prices list задаем падинги с 4 сторон  */
 
+/* prices items марджен боттон */
+
+/* botton вирівнюємо по центру,дисплей,марджин топ  */
+
+.prices {
+  padding: 12px 0;
+}
 .prices-pre-title {
-    color: rgba(157, 164, 189, 0.6);
+  color: rgba(157, 164, 189, 0.6);
+  margin-bottom: var(--main-margin);
 }
 
 .prices-title {
-    color: var(--secondary-header-color);
+  color: var(--secondary-header-color);
+  margin-bottom: 44px;
+}
+
+.prices-list {
+  border: 1px solid #303030;
+  padding: 30px 20px;
 }
 
 .prices-elem {
-font-size: 18px;
-line-height: 1.67;
-letter-spacing: 0.02em;
-color: #9DA4BD;
+  margin-bottom: var(--main-margin);
+}
+.prices-elem {
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+  color: #9da4bd;
 }
 .prices-btn {
-    color: #FFFFFF;
+  color: #ffffff;
+  margin: 0 auto;
+  display: block;
+  margin-top: 44px;
 }
 
 /* ------------BEEFITS----------- */
 
+/* Шаг 7 - точно также как и в шаге 6  */
+
+.benefits {
+  padding: 120px 0px;
+}
 .benefits-items > span {
-    font-weight: 700;
-    font-size: 42px;
-    line-height: 1.35;
-    text-align: center;
-    letter-spacing: 0.05em;
-    color: #303030;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.35;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: #303030;
 }
 .benefits-items > sup {
-     font-weight: 600;
-    font-size: 16px;
-    line-height: 1.38;
-    text-align: center;
-    color:var(--accent-color);
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.38;
+  text-align: center;
+  color: var(--accent-color);
 }
 .benefits-pre-title {
-    color: #303030;
+  color: #303030;
+  margin-bottom: var(--main-margin);
 }
 
 .benefits-title {
-    color: var(--primary-header-color);
+  color: var(--primary-header-color);
+  margin-bottom: var(--main-margin);
 }
 
 .benefits-after-title {
-    color: #555555;
-
+  color: #555555;
 }
 
 /* ------------BEARBERS----------- */
 
 .barbers-pre-title {
-    color: #303030;
+  color: #303030;
 }
 
 .barbers-title {
-   color: var(--primary-header-color);
+  color: var(--primary-header-color);
 }
 
 .barbers-name {
-        
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 1.38;
-    text-align: center;
-    letter-spacing: 0.02em;
-    color: #303030;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.38;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #303030;
 }
 .barbers-info {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.35;
-    text-align: center;
-    letter-spacing: 0.02em;
-    color: var(--accent-color);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.35;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
 }
 /* -------------------GALLERY-------- */
 
 .gallery-pre-title {
-    color:#303030;;
+  color: #303030;
 }
 
 /* -------------------FORM-------- */
 .form-title {
-    color: var(--secondary-header-color);
+  color: var(--secondary-header-color);
 }
 
 /* -------------------CONTACTS------- */
 .contacts-title {
-    color: var(--secondary-header-color);
+  color: var(--secondary-header-color);
 }
 
 .contacts-links {
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 1.67;
-    letter-spacing: 0.02em;
-    color: #9DA4BD;
-
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+  color: #9da4bd;
 }
 .contact-adress {
-    font-weight: 700;
+  font-weight: 700;
 }
 .contacts-pre-title {
-    color: #FFFFFF;
+  color: #ffffff;
 }
 
 .contacts-text {
-    font-size: 18px;
-    line-height: 1.67;
-    letter-spacing: 0.02em;
-    color: #9DA4BD
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+  color: #9da4bd;
 }
 /* --------FOOTER----- */
 .footer-copy {
-    font-weight: 600;
-    font-size: 11px;
-    line-height: 1.36;
-    letter-spacing: 0.2em;
-    color: #9DA4BD;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.2em;
+  color: #9da4bd;
 }
 
 .footer-links {
-    font-weight: 600;
-    font-size: 11px;
-    line-height: 1.36;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
 
-    letter-spacing: 0.2em;
-    color: #303030;
+  letter-spacing: 0.2em;
+  color: #303030;
 }
 
 .footer-links:hover,
 .footer-links:focus {
-    color: var(--accent-color)
+  color: var(--accent-color);
 }
