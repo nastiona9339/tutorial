@@ -266,17 +266,28 @@ body {
 /* ------------BEEFITS----------- */
 
 /* Шаг 7 - точно также как и в шаге 6  */
+/* benefits - items, паддинг , текст инлайн - центрарирование, задаем батьківському елементу   */
+/* benefits items> span перевели в инлайн бол и центрировали  */
 
 .benefits {
   padding: 120px 0px;
 }
+
+.benefits-items {
+  background-color: #f7f7f7;
+  width: 170px;
+  height: 133px;
+  padding: 20px 24px;
+  text-align: center;
+}
+
 .benefits-items > span {
   font-weight: 700;
   font-size: 42px;
   line-height: 1.35;
-  text-align: center;
   letter-spacing: 0.05em;
   color: #303030;
+  display: block;
 }
 .benefits-items > sup {
   font-weight: 600;
@@ -300,13 +311,19 @@ body {
 }
 
 /* ------------BEARBERS----------- */
+/* 3 мод 1 занят - 7 шаг, тоже самое что и в 6  */
+.barbers {
+  padding: 120px 0px;
+}
 
 .barbers-pre-title {
   color: #303030;
+  padding-bottom: var(--main-margin);
 }
 
 .barbers-title {
   color: var(--primary-header-color);
+  padding-bottom: 44px;
 }
 
 .barbers-name {
@@ -316,6 +333,8 @@ body {
   text-align: center;
   letter-spacing: 0.02em;
   color: #303030;
+  margin-top: 30px;
+  margin-bottom: 8px;
 }
 .barbers-info {
   font-weight: 400;
@@ -326,9 +345,12 @@ body {
   color: var(--accent-color);
 }
 /* -------------------GALLERY-------- */
-
+.gallery {
+  padding: 120px 0px;
+}
 .gallery-pre-title {
   color: #303030;
+  margin-bottom: 44px;
 }
 
 /* -------------------FORM-------- */
@@ -363,6 +385,9 @@ body {
   color: #9da4bd;
 }
 /* --------FOOTER----- */
+.container {
+  padding: 56px 0px;
+}
 .footer-copy {
   font-weight: 600;
   font-size: 11px;
