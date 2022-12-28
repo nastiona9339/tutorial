@@ -1,116 +1,140 @@
- /* цвет основного текста #000000 */
+/* цвет основного текста #000000 */
 /* вторичный цвет текста rgba(0, 0, 0, 0.8)  */
 
 /* белый цвет #FFFFFF */
 /* акценты #18A0FB */
 /* вторичный цвет фона #F5F5F5 */
- 
- :root {
-    --primary-text-color: rgba(0, 0, 0, 0.8);
-    --title-text-color: black;
-    --accent-color: #18A0FB;
-    --primary-white-color:#ffffff;
 
-    /* 3 мод 1 зан. Дали для секции, которая с разными фонами дополнит фон */
-    --secondary-bg-color: #f5f5f5;
-    
- }
- 
-  body {
-    background:var(--primary-white-color);
-    color: var(--primary-text-color);
-    font-family: Montserrat, sans-serif;
-    font-size: 18px;
-    line-height: 1.67;
+:root {
+  --primary-text-color: rgba(0, 0, 0, 0.8);
+  --title-text-color: black;
+  --accent-color: #18a0fb;
+  --primary-white-color: #ffffff;
+
+  /* 3 мод 1 зан. Дали для секции, которая с разными фонами дополнит фон */
+  --secondary-bg-color: #f5f5f5;
 }
 
+body {
+  background: var(--primary-white-color);
+  color: var(--primary-text-color);
+  font-family: Montserrat, sans-serif;
+  font-size: 18px;
+  line-height: 1.67;
+}
 
 /* 3 зан 1 лек сбросили автоматические марджаны и паддинги от бразера во всех списках  */
 .list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 /* 3 модуль 1 занятия контейнеры (контейнер не должен иметь своих паддингов его задача обернуть и центрировать горизонтально, вертикально он ничего не должен делать) */
 /* 3 модуль 1 занят Дали паддинги целим кантейнирам 1 */
 .container {
-    margin-left: auto;
-    margin-right: auto;
-    width: 1240px;
-    outline: 2px solid tomato;
-    padding-right: 20px;
-    padding-left: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1240px;
+  outline: 2px solid tomato;
+  padding-right: 20px;
+  padding-left: 20px;
 }
 
 /* logo */
 .logo {
-    color: var(--title-text-color);
-    font-family: Comfortaa,cursive; 
+  color: var(--title-text-color);
+  font-family: Comfortaa, cursive;
 
-font-size: 28px;
-line-height: 1.14;
+  font-size: 28px;
+  line-height: 1.14;
 
-text-decoration: none;
-
+  text-decoration: none;
 }
 
 /* ми перебили вар на другой акцент внутри переменной  --new-accent: red;
     color: var(--accent-color) поменяли на новую*/
 .logo:hover {
-    --new-accent: red;
-    color: var(--new-accent);
+  --new-accent: red;
+  color: var(--new-accent);
 }
 
 /* 3 модуль 1 заняттия КОНТЕЙНЕРЫ */
 .page-header {
-    background-color: #ccc;
+  background-color: #ccc;
+}
+
+/*  3 mod 2 les give nav ectra class main nav to make all ul in one row   */
+.main-nav {
+  display: flex;
+  align-items: center;
 }
 
 /* site nav */
-.site-nav .link{
-    color: var(--accent-color)
-    ;
-font-weight: 500;
-font-size: 15px;
-line-height: 1.2;
-text-decoration: none;
-
+/* 3 mod 2 les display change,margin left */
+.site-nav {
+  display: flex;
+  margin-left: 70px;
 }
-.site-nav .link:hover, .site-nav .link:focus {
-    color: var(--title-text-color);}
+/* 3 mod 2 les margin for + extra class .items for  li exept last one */
+.site-nav .item:not(:last-child) {
+  margin-right: 40px;
+}
 
-    .site-nav .link.current {
-        color: var(--title-text-color);
-    }
+/* 3 mod 2 les - a change to display block,padding top and bottom for a  */
+.site-nav .link {
+  display: block;
+  padding-top: 21px;
+  padding-bottom: 21px;
+  color: var(--accent-color);
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 1.2;
+  text-decoration: none;
+}
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--title-text-color);
+}
 
+.site-nav .link.current {
+  color: var(--title-text-color);
+}
+
+/* 3 mod 2 sec auth nav - flex, margin left */
+.auth-nav {
+  display: flex;
+  margin-left: auto;
+}
+
+.auth-nav .item + .item {
+  margin-left: 12px;
+}
 .clients > .section-title {
-    color: tomato;
+  color: tomato;
 }
 
 /* hero 
 3 лекция 1 зан - 1.сбрасываем марджаны 2.отодвигаем нижн марджаном заголовок от кнопки
  */
 
- /* задали герою текст - елайн */
+/* задали герою текст - елайн */
 
- .hero {
-    text-align: center;
- }
+.hero {
+  text-align: center;
+}
 
 .hero-title {
-    margin-top: 0;
-    margin-bottom: 40px;
-   
-    color: var(--title-text-color);
-    
-font-weight: 400;
-font-size: 56px;
-line-height: 1.43;
+  margin-top: 0;
+  margin-bottom: 40px;
 
-text-align: center;
+  color: var(--title-text-color);
 
+  font-weight: 400;
+  font-size: 56px;
+  line-height: 1.43;
 
+  text-align: center;
 }
 
 /* section */
@@ -119,57 +143,75 @@ text-align: center;
 /* 3 мод 1 зан задаем секции но - паддинг */
 
 .section.no-padding {
-    padding-top: 0%;
-    padding-bottom: 0;
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
 .section {
-    padding-top: 120px;
-    padding-bottom: 120px;
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 .section-title {
-    margin-top: 0%;
-    margin-bottom: 60px;
+  margin-top: 0;
+  margin-bottom: 60px;
 
-    color: var(--title-text-color);
- 
-font-weight: 400;
-font-size: 48px;
-line-height: 1.5;
+  color: var(--title-text-color);
 
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 1.5;
 }
-
 
 /* Дали центрирование тем отделам, которые нужнались секции Примеры работ и клиенты  */
 .section-title.centred {
-    text-align: center;
+  text-align: center;
 }
 
 /* 3 мод 1 зан дали марджаны отступ от параграфа к фото */
 .section-description {
-
-margin-top: 0;
-margin-bottom: 80px;
-font-size: 36px;
-line-height: 1.39;
+  margin-top: 0;
+  margin-bottom: 80px;
+  font-size: 36px;
+  line-height: 1.39;
 }
 
 /* FUTURES and EXAMPLES*/
 /* features селектор потомка добавили works лист, потому что оденаковіе характеристики*/
 
+/* 3 mod 2 lesson add wrap for make the extra raw */
+/* 3 лек 2 занзадать отрицательній марджан - половину от маржана с макета  */
+
+.feature-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -75px;
+}
+
+/* 3 mod 2 less li add max width  */
+/* 3 лекц 2 занят здать марджан половину что на макете  */
+.feature-list .items {
+  width: 520px;
+  margin: 75px;
+}
+
 /* 3 мод 1 зан сбрасіваем марджині у заголовка по умолчянию */
+
 .feature-list .title,
 .work-list .title {
-    margin-top: 0;
-    margin-bottom: 24px;
-    color: var(--title-text-color);
- 
-font-weight: 700;
-font-size: 24px;
-line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 24px;
+  color: var(--title-text-color);
 
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.5;
 
-letter-spacing: -0.015em;
+  letter-spacing: -0.015em;
+}
+
+.feature-list p {
+  margin-top: 0;
+  margin-bottom: 32px;
 }
 
 /* WORKS */
@@ -177,24 +219,15 @@ letter-spacing: -0.015em;
 /* подсвитить все четные серым цвето */
 /* задали бекграунт цвет для каждой второй секции и для основной */
 
-
-
 .work-list > .item {
-padding-top: 80px;
-padding-bottom: 80px;
-background-color: var(--primary-white-color);
-
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background-color: var(--primary-white-color);
 }
 
 .work-list > .item:nth-child(2n) {
-    background-color: var(--secondary-bg-color);
+  background-color: var(--secondary-bg-color);
 }
-
-.feature-list p {
-    margin-top: 0;
-    margin-bottom: 32px;
-}
-
 
 /* button */
 /* class buttom - это кнопки ссылочки : типа регестрация и тд  перебили засчет того,что дали дополнительный класс прймери*/
@@ -203,44 +236,35 @@ background-color: var(--primary-white-color);
 
 /* 3 мод 1 занят задали бордер (рамку) для кнопки, цвет транспарент - прозрачний цвет*/
 .button {
-    display: inline-block;
-    border: 1px solid transparent; 
-    border-radius: 6px;
-    padding: 11px 34px;
-    min-width: 130px;
+  display: inline-block;
+  border: 1px solid transparent;
+  border-radius: 6px;
+  padding: 11px 34px;
+  min-width: 130px;
 
-    color: var(--title-text-color);
-    background-color: var(--primary-white-color);
+  color: var(--title-text-color);
+  background-color: var(--primary-white-color);
 
-    font-weight: 500;
-    font-size: 1.2;
-    line-height: 18px;
-    text-decoration: none;
-    text-align: center;
-
+  font-weight: 500;
+  font-size: 1.2;
+  line-height: 18px;
+  text-decoration: none;
+  text-align: center;
 }
 
-
 .button.primary {
-    color: var(--primary-white-color); 
-    background-color: var(--accent-color); 
-         
-} 
-
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
+}
 
 /* 3 мод 1 занят задали бордер (рамку) для кнопки транспарент више общую, применили бордер калер для рамки на синий */
 .button.secondary {
-    border-color: var(--accent-color);
-    color: var(--accent-color); 
-    background-color: var(--primary-white-color); 
+  border-color: var(--accent-color);
+  color: var(--accent-color);
+  background-color: var(--primary-white-color);
 }
 
 /* робота с репетой */
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
 
 body {
   font-family: sans-serif;
@@ -263,5 +287,3 @@ body {
   border-top: 10px solid #2196f3;
   border-bottom: 10px solid #2196f3;
 }
-
-
