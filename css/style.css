@@ -86,7 +86,7 @@ body {
 }
 .title {
   font-family: "Raleway", sans-serif;
-  font-size: 72px;
+  font-size: 42px;
   line-height: 1.18;
   letter-spacing: 0.05em;
 }
@@ -114,12 +114,37 @@ body {
   background-color: gray;
 }
 
+/* 3 мод 2 занят задаємо усьому хедер контейнеру флекс, не задаємо на утилит контейнер, тому що не всі контейнеру захочуть бути флекс */
+
+/* 3 мод 2 занят задаємо флекс батьківському елементу списку  */
+
+.header .container {
+  display: flex;
+  align-items: center;
+}
+
+.header-list {
+  display: flex;
+}
+
+/* мод 3 зан 2 задали марджан правий на батьківський елемент для лишек на все ли кроме последнего  */
+.header-list li + li {
+  margin-left: 30px;
+}
+
+/* .header-list > li:not(:last-child) {
+  margin-right: 30px;
+} */
+
 /* 3мод 1 зан - шаг 2 */
 /* задаем паддинг найвищ елементу */
 /* а у нас инлайновий - поєтому задаем дисплей блок  */
+
+/* отодвинули с помощью марджина лого от списка */
 .header-logo {
   padding: 32px 0;
   display: block;
+  margin-right: 130px;
 }
 .header-link {
   font-weight: 600;
@@ -134,6 +159,11 @@ body {
   color: var(--accent-color);
 }
 
+/* создали батьківсь елемент для контактов хедер контакт і задайом ему автоматический маржин левій , чтобі отодвинуть наш елемент вправо  */
+
+.header-contact {
+  margin-left: auto;
+}
 .header-tel {
   font-weight: 600;
   font-size: 12px;
@@ -142,8 +172,18 @@ body {
   color: var(--primary-link-color);
 }
 
+/*3 мод 2 занят  задати марджан между кнопкой и ссілкой задаю кнопке */
+
+/* доделіваем кнопку задаем бодер и бордер радиус, высоту и мин ширину и задний цвет, бекграунд транспарент чтобі просвечивалась - залн фон прозрачній   */
 .header-btn {
+  margin-left: 40px;
   color: #ffffff;
+  background-color: transparent;
+
+  border: 1px solid #ff6c00;
+  border-radius: 25px;
+  height: 40px;
+  min-width: 160px;
 }
 
 /* ------SECTION HERO---------- */
@@ -158,9 +198,23 @@ body {
   background-color: #737373;
 }
 
+/* 3 мод 2 зад задаем флекс херо */
+.hero .container {
+  display: flex;
+}
+
+/* 3 мод 2 зан обьязательно задаем гроф , потому что правая часть будет расти в зависимости от контента b и сободного места   */
 .hero-right {
   padding: 184px 526px 208px 100px;
+  flex-grow: 1;
 }
+
+/* 3 мод 2 зан мы задаем фиксир ширину которая всегда должна быть  */
+
+.hero-list {
+  width: 100px;
+}
+
 .hero-pre-title {
   color: rgba(157, 164, 189, 0.6);
   margin-bottom: var(--main-margin);
@@ -191,8 +245,25 @@ body {
 }
 
 /* ------ABOUT---------- */
-
+/* контейнеру ебаут флекс */
 /* 3 мод 1 зан шаг 5 отріваем засчет внтреннпадинга вот єтот белій промежуток в контейнере делаем єто на классе ебаут  */
+
+/* 3 мод 2 задан задаем марджин между картинками */
+.about .container {
+  display: flex;
+}
+
+.list-about {
+  display: flex;
+}
+
+.about-items:not(:last-child) {
+  margin-right: 30px;
+}
+
+.about-wrap {
+  margin-left: 30px;
+}
 
 .about {
   padding: 120px 0;
@@ -204,6 +275,7 @@ body {
 .about-title {
   color: var(--primary-header-color);
   margin-bottom: var(--main-margin);
+  font-size: 42px;
 }
 .about-after-title {
   color: #555555;
@@ -218,6 +290,12 @@ body {
 }
 .about-btn {
   color: #303030;
+  background-color: transparent;
+
+  border: 1px solid #ff6c00;
+  border-radius: 25px;
+  height: 40px;
+  min-width: 160px;
 }
 
 /* ------PRICES---------- */
@@ -232,6 +310,12 @@ body {
 .prices {
   padding: 12px 0;
 }
+
+/* делаем промежут геп между списками в флекс контейнере */
+.prices-list-wrap {
+  display: flex;
+  gap: 30px;
+}
 .prices-pre-title {
   color: rgba(157, 164, 189, 0.6);
   margin-bottom: var(--main-margin);
@@ -242,14 +326,25 @@ body {
   margin-bottom: 44px;
 }
 
+/* 3 урок 2 занятие задаем возможность елементам рости , потому что флекс их уменьшил */
 .prices-list {
   border: 1px solid #303030;
   padding: 30px 20px;
+  flex-grow: 1;
 }
 
-.prices-elem {
+/* 3 зан 2 урок задаю ли флекс и джастифай контентспейс битвин использ, чтобі рассунуть цену и наименование к краям 
+2)обнуляет крайний марджан с помощтю ласт чайлд */
+.prices-items {
   margin-bottom: var(--main-margin);
+  display: flex;
+  justify-content: space-between;
 }
+
+.prices-items:last-child {
+  margin-bottom: 0px;
+}
+
 .prices-elem {
   font-size: 18px;
   line-height: 1.67;
@@ -279,6 +374,21 @@ body {
   height: 133px;
   padding: 20px 24px;
   text-align: center;
+}
+
+/* 3 мод 2 занят задать юл флекс а также ширину  */
+.benefits-list {
+  display: flex;
+  flex-wrap: wrap;
+  width: 370px;
+}
+
+.benefits-items:nth-child(2n + 1) {
+  margin-right: 30px;
+}
+
+.benefits-items:nth-child(2n) {
+  margin-top: 30px;
 }
 
 .benefits-items > span {
@@ -312,6 +422,7 @@ body {
 
 /* ------------BEARBERS----------- */
 /* 3 мод 1 занят - 7 шаг, тоже самое что и в 6  */
+
 .barbers {
   padding: 120px 0px;
 }
@@ -324,6 +435,18 @@ body {
 .barbers-title {
   color: var(--primary-header-color);
   padding-bottom: 44px;
+}
+
+/* 3 мод 2 занят как делать сетку 1. ставим во флекс список 2. задаем ширину елементам c помощью кальк - барберс айтемс, (або флекс базис) задаем марджин райт */
+.barbers-list {
+  display: flex;
+}
+
+.barbers-items:not(:last-child) {
+  margin-right: 30px;
+}
+.barbers-items {
+  flex-basis: calc((100% - 60px) / 3);
 }
 
 .barbers-name {
@@ -353,6 +476,19 @@ body {
   margin-bottom: 44px;
 }
 
+/* сетка: ставим наш список во флекс - в рядок картнкки,2.чтобы картинки не вылазили за границы нашего контейнера ставим видз через кальк 3задаем на елементи марджин лефт и боттон,задаем - марджани  для батькывс елемента */
+
+.gallery-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-bottom: -30px;
+}
+.gellery-item {
+  width: calc ((100% -120px)/4);
+  margin-left: 30px;
+  margin-bottom: 30px;
+}
 /* -------------------FORM-------- */
 .form-title {
   color: var(--secondary-header-color);
