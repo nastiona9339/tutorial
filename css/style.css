@@ -123,7 +123,8 @@ body {
   align-items: center;
 }
 
-.header-list {
+.header-list,
+.header-contact {
   display: flex;
 }
 
@@ -489,6 +490,7 @@ body {
   margin-left: 30px;
   margin-bottom: 30px;
 }
+
 /* -------------------FORM-------- */
 .form-title {
   color: var(--secondary-header-color);
