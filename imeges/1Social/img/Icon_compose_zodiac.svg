@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+  <g id="Icon_compose_zodiac" transform="translate(0)" opacity="0.5">
+    <rect id="Area" width="16" height="16" transform="translate(0 0)" fill="#fcfcfc" opacity="0"/>
+    <g id="Icon" transform="translate(0 0)">
+      <path id="cb2b6d3d-743c-412a-86aa-c226bbd99992" d="M0,0H16V16H0Z" transform="translate(0 0)" fill="none"/>
+      <path id="_5e7f6622-31e3-445e-90a8-811ecc472586" data-name="5e7f6622-31e3-445e-90a8-811ecc472586" d="M4,2a4,4,0,0,0,8,0" transform="translate(0 0)" fill="none" stroke="#ff325a" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      <path id="a2e670d2-5509-460e-8699-7c9ac0c9a21d" d="M12,10A4,4,0,1,1,8,6,4,4,0,0,1,12,10Z" transform="translate(0 0)" fill="none" stroke="#ff325a" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,104 @@
+body{
+    display: flex;
+    background: #F5F5F5 0% 0% no-repeat padding-box;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    height: 100%;
+
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center;
+    align-items: center; */
+
+    width: 100vw;
+    height: 100vh;
+
+    max-width: 1440px;
+    padding: 20px 0 50px 0;
+}
+
+.wrapper .header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+
+    margin-bottom: 50px;
+}
+
+.wrapper .header h1{
+    font: normal normal 900 34px/40px Gilroy;
+    letter-spacing: 0px;
+}
+
+.wrapper .header .smallTitle{
+    display: inline-block;
+    font: normal normal bold 22px/28px Gilroy;
+}
+
+.countSended{
+    display: inline-block;
+    font: normal normal bold 22px/28px Gilroy;
+}
+
+.checkButton{
+    width: 180px;
+    height: 40px;
+}
+
+.table{
+    width: 80%;
+    
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 10px 20px #0000001A;
+    border-radius: 20px;
+
+    overflow: auto;
+}
+
+.table::-webkit-scrollbar {
+    width: 10px;
+    background-color: #dadada;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.table::-webkit-scrollbar-thumb {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+
+    background-color: darkgray;
+    width: 6px;
+}
+
+.table .headerRow{
+    border-bottom: 2px solid #EFEFEF;
+    height: 40px;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+}
+
+.headerRow .columnTitle{
+    font: normal normal bold 14px/18px Gilroy;
+}
+
+.table .tableRow{
+    border-bottom: 1px solid #EFEFEF;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 100%;
+    padding: 12px;
+}
+
+.table .tableRow div{
+    font: normal normal normal 14px/16px Gilroy;
+}
+
+
+

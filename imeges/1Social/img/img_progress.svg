@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="115" height="91.828" viewBox="0 0 115 91.828">
+  <g id="img_progress" transform="translate(-579 -318.172)">
+    <g id="Icon" transform="translate(616 321)">
+      <rect id="Area" width="40" height="40" fill="#fcfcfc" opacity="0"/>
+      <g id="Icon-2" data-name="Icon">
+        <line id="_09882f6e-4423-4a50-97eb-a10676fcc769" data-name="09882f6e-4423-4a50-97eb-a10676fcc769" x1="22" y2="22" transform="translate(18)" fill="none" stroke="#ff325a" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
+        <path id="_41ed6bf8-44de-43bf-ba55-587332166588" data-name="41ed6bf8-44de-43bf-ba55-587332166588" d="M42,2,28,42,20,24,2,16Z" transform="translate(-2 -2)" fill="none" stroke="#ff325a" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
+      </g>
+    </g>
+    <g id="Icon-3" data-name="Icon" transform="translate(652 370)">
+      <rect id="Area-2" data-name="Area" width="39.999" height="39.999" transform="translate(0)" fill="#fcfcfc" opacity="0"/>
+      <g id="Icon-4" data-name="Icon" transform="translate(0 5.458)">
+        <path id="_4f540984-e6b9-444f-8af0-b1cf984cf42b" data-name="4f540984-e6b9-444f-8af0-b1cf984cf42b" d="M31.815,14.541h-2.29a14.542,14.542,0,1,0-14.07,18.178h16.36a9.089,9.089,0,0,0,0-18.178Z" transform="translate(-0.903 -3.635)" fill="none" stroke="#ff325a" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
+      </g>
+    </g>
+    <g id="Icon-5" data-name="Icon" transform="translate(579 354)">
+      <rect id="Area-3" data-name="Area" width="40" height="40" fill="#fcfcfc" opacity="0"/>
+      <g id="Icon-6" data-name="Icon">
+        <path id="_8412c283-39e8-482f-805c-3c381ce702ab" data-name="8412c283-39e8-482f-805c-3c381ce702ab" d="M0,0H40V40H0Z" fill="none"/>
+        <path id="_32f563ec-01fd-4d5e-99f8-14cf33f2049e" data-name="32f563ec-01fd-4d5e-99f8-14cf33f2049e" d="M9.753,25.876a7.676,7.676,0,0,1-7.84-7.5,7.676,7.676,0,0,1,7.84-7.5c1.024-4.556,5.956-7.5,11.02-6.584s8.336,5.36,7.314,9.918h1.666a5.833,5.833,0,1,1,0,11.666h-20" transform="translate(1.913 4.124)" fill="none" stroke="#ff325a" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
+      </g>
+    </g>
+  </g>
+</svg>

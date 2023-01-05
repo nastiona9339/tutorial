@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28">
+  <g id="Icon_upload_error" transform="translate(2 2)" opacity="0.3">
+    <rect id="Area" width="24" height="24" fill="#fcfcfc" opacity="0"/>
+    <g id="Icon" transform="translate(1.29 2.499)">
+      <path id="a0e5e612-1c9c-4835-a2e9-f6fa660303f9" d="M9.432,2.4h9.936L26.4,9.432v9.936L19.368,26.4H9.432L2.4,19.368V9.432Z" transform="translate(-3.69 -4.899)" fill="none" stroke="#ff325a" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
+      <line id="_69ecebfb-46cf-4779-b64f-9deb94eb4f72" data-name="69ecebfb-46cf-4779-b64f-9deb94eb4f72" x1="7.2" y2="7.2" transform="translate(7.11 5.901)" fill="none" stroke="#ff325a" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
+      <line id="_0c4b89bc-9f9f-4efa-90e0-5924cea29171" data-name="0c4b89bc-9f9f-4efa-90e0-5924cea29171" x2="7.2" y2="7.2" transform="translate(7.11 5.901)" fill="none" stroke="#ff325a" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
+    </g>
+  </g>
+</svg>

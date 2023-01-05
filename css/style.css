@@ -195,9 +195,6 @@ body {
 /* виносимо общий марджин между едеменами в змінну, а також задаємо марджин боттон всем елементам в єтом контейнере - херо при тайтл, херо тайтл   */
 
 /* херо текст задаем макс видс - чтобі разбить на 2 строчки */
-.hero {
-  background-color: #737373;
-}
 
 /* 3 мод 2 зад задаем флекс херо */
 .hero .container {
@@ -208,6 +205,16 @@ body {
 .hero-right {
   padding: 184px 526px 208px 100px;
   flex-grow: 1;
+  background-image: linear-gradient(
+      rgba(25, 28, 38, 0.2),
+      rgba(25, 28, 38, 0.2)
+    ),
+    url(../imeges/barber-bcg.jpg);
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #303030;
 }
 
 /* 3 мод 2 зан мы задаем фиксир ширину которая всегда должна быть  */
@@ -310,6 +317,13 @@ body {
 
 .prices {
   padding: 12px 0;
+  background-image: url(../imeges/img_trans.png);
+  background-color: #111319;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  max-width: 1600px;
+  margin: 0 auto;
 }
 
 /* делаем промежут геп между списками в флекс контейнере */
@@ -426,7 +440,47 @@ body {
 
 .barbers {
   padding: 120px 0px;
+  background-color: #f7f7f7;
 }
+
+.barbers-soc-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.barbers-soc-items {
+  width: 44px;
+  height: 44px;
+}
+
+.barbers-soc-items:not(:last-child) {
+  margin-right: 10px;
+}
+
+.barbers-soc-link {
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  display: flex;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  color: #000;
+}
+
+.barbers-soc-link:hover {
+  background-color: #000;
+  color: var(--accent-color);
+}
+
+.barbers-soc-icons {
+  fill: currentColor;
+}
+
+/* .barbers-soc-link:hover .barbers-soc-icons {
+  fill: #ff6c00;
+} */
 
 .barbers-pre-title {
   color: #303030;
@@ -467,6 +521,7 @@ body {
   text-align: center;
   letter-spacing: 0.02em;
   color: var(--accent-color);
+  margin-bottom: 30px;
 }
 /* -------------------GALLERY-------- */
 .gallery {

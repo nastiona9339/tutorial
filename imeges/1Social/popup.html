@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="popup.css">
+    <title>1st social</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="authPopUp">
+            <img src="/img/bg-img.svg" alt="bg-image" class="bgImage">
+            <div class="authPopUp_wrapper">
+                <div class="lockImage">
+                    <img class="lock-image" src="/img/lock-icon.svg" alt="lock-icon">
+                </div>
+                <div class="title">
+                    Welcome & LOGIN
+                </div>
+                <div class="subtitle">
+                    Авторизуйтесь как переводчик, чтобы получить доступ ко всем функциям расширения.
+                </div>
+                <div class="inputs">
+                    <input class="email-input" type="text" placeholder="Email">
+                    <p class="error">Пожалуйста, введите корректный email адрес.</p>
+                    <div class="password">
+                        <input class="password-input" type="password" id="password-input" placeholder="Пароль" name="password">
+                        <a href="#" class="password-control"></a>
+                    </div>
+    
+                    <div class="captcha">
+                        <div class="captchaTitle">
+                            <p class="description">Сумма значений:</p>
+                            <p class="captchaCheck"></p>
+                        </div>
+                        <input type="text" class="captcha-input" placeholder="Enter sum of numbers">
+                    </div>
+                </div>
+                <button class="authButton"> <img class="loader-icon" src="/img/loader-icon.svg" alt="loader-icon">Войти</button>
+                <div class="loginError error">
+                    Email или пароль неверны. Свяжитесь с администратором, если вы забыли данные для входа.
+                </div>
+                <div class="captchaError error">
+                    Убедитесь, что сумма в поле проверки верна, и повторите попытку.
+                </div>
+            </div>
+        </div>
+
+        <div class="progressPopUp">
+            <div class="progressPopUpWrapper">
+                <img src="img/img_progress.svg" alt="progress_icon">
+                <div class="progressBarBackground">
+                    <div class="progressBar"></div>
+                </div>
+                <div class="desc">
+                    <div class="title">
+                        Работа в процессе
+                        <div class="count"><p class="count1"></p> из <p class="count2"></p></div>                      
+                    </div>
+                    <div class="subTitle">
+                        Пожалуйста, подождите
+                    </div>
+                    <button class="stopButton checkButton">Остановить</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="content">
+            
+            <div class="logOutBlock">
+                <div class="switch-btn" id="logOutSwitch"></div>
+                <div class="history">
+                    <img src="img/icon_message.svg" alt="history_icon">
+                </div>
+                <div class="logOut">
+                    <img src="img/Icon_menu_logout.svg" alt="logout" class="">
+                </div>
+            </div>
+
+            <div class="blureScreen">
+                X-Sender деактивирован
+            </div>
+
+            <div class="siteAuthPopUp">
+                <img src="/img/bg-img.svg" alt="bg-image" class="bgImage">
+                <div class="siteAuthPopUp_wrapper">
+                    <div class="lockImage">
+                        <img class="lock-image-site" src="/img/lock-icon.svg" alt="lock-icon">
+                    </div>
+                    <div class="title">
+                        Welcome & LOGIN 
+                    </div>
+                    <div class="subtitle">
+                        Войдите в личный кабинет 1st-social
+                    </div>
+                    <div class="inputs">
+                        <input class="site_login" id="site_login" type="text" placeholder="Email">
+                        <div class="password">
+                            <input class="site_pass" type="password" id="site_pass" placeholder="Пароль" name="password">
+                            <a href="#" class="password-control-site"></a>
+                        </div>
+                    </div>
+                    <button class="site_auth"><img class="loader-icon2" src="/img/loader-icon.svg" alt="loader-icon2">Войти</button>
+                    <div class="siteAuthError error">
+                        Некорректное имя пользователя или пароль.
+                    </div>
+                </div>
+            </div>
+
+            <div class="addMessage">
+                <div class="message">
+                    <div class="titleBlock">
+                        <h2 class="title">Подготовка сообщения</h2>
+                        <div class="checkSymbols">
+                            <p class="subtitle">Вставьте текст, который хотите отправить. </br>Он должен содержать от 100 до 1200 английских символов.</p>
+                            <div class="symbols">
+                                <p class="symbolsCount1">0</p>
+                                <p class="symbolsCount2">/</p>
+                                <p class="symbolsCount3">1200</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="messageAreas" contenteditable="true">
+    
+                    </div>
+                    <div class="messageError error">Пожалуйста, добавьте текст на английском языке без спецсимволов "{;};|"</div>
+                    <div class="variables">
+                        <p class="subtitle">Сделайте ваше сообщение более персонализированным. Добавьте переменные с помощью кнопок:</p>
+                        <div class="variablesButtons">
+                            <button class="variable name"><img src="/img/Icon_compose_name.svg" alt="">Name</button>
+                            <button class="variable country"><img src="/img/Icon_compose_country.svg" alt=""> Contry</button>
+                            <button class="variable city"><img src="/img/Icon_compose_city.svg" alt=""> City</button>
+                            <button class="variable age"><img src="/img/Icon_compose_age.svg" alt=""> Age</button>
+                            <button class="variable zodiac"><img src="/img/Icon_compose_zodiac.svg" alt=""> Zodiac</button>
+                        </div>
+                        <p class="variablesError error">Поместите курсор в текстовое поле.</p>
+                    </div>
+                </div>
+                <div class="photoUploader">
+                    <input type="file" class="file_input" accept=".jpg, .jpeg" name="uploadFile" id="file_input">
+                    <div class="photo output"><img class="photo_block" src="img/icon_upload_image.svg" alt=""></div>
+                    <label for="file_input" class="uploadField">
+                        <div class="uploadFieldWrapper">
+                            <div class="photoError">
+                                Пожалуйста, добавьте фото в формате <br/> JPEG, JPG, JP2, HEIC.
+                            </div>
+                            <img src="img/Icon_upload_addphoto.svg" alt="add-icon">
+                            Добавить фото
+                        </div>
+                        <div class="uploadedPhoto">
+                            <div class="uploadedPhotoData">
+                                <p class="photo_name"></p>
+                                <p class="photo_size"></p>
+                            </div>
+                            <div class="changePhoto"><img src="img/icon_upload_replace.svg" class="replace_button" alt="change-icon">Заменить фото</div>
+                        </div>
+                    </label>
+                    <img src="img/delete-icon.svg" alt="deleteIcon" class="deletePhoto">
+                </div>
+                <div class="checkButton" id="checkButton">Далее</div>
+            </div>
+            
+
+
+            <div class="chosenBlock">
+                <div class="title" id="generalTitle">
+                    Выбор группы получателей
+                </div>
+                <div class="row">
+                    <div class="age">
+                        <div class="title">
+                            <div class="switch-btn" id="manAgeSwitch"></div>
+                            Возраст мужчины
+                        </div>
+                        <select name="manAgeMin" id="manAgeMin" class="manAgeMin"></select>
+                        <select name="manAgeMax" id="manAgeMax" class="manAgeMax"></select>
+                    </div>
+                    <div class="age2">
+                        <div class="title">
+                            <div class="switch-btn" id="manAge2Switch"></div>
+                            Желаемый возраст партнёра
+                        </div>
+                        <select name="manAgeMin2" id="manAgeMin2" class="manAgeMin2">
+                            <option value="-1">Неважно</option>
+                        </select>
+                        <select name="manAgeMax2" id="manAgeMax2" class="manAgeMax2">
+                            <option value="-1">Неважно</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="excludeMan">
+                        <div class="title">
+                            <div class="switch-btn" id="excludeManSwitch"></div>
+                            <p>Исключить мужчин, знающих украинский и русский языки</p>
+                        </div>
+                    </div>
+                    <div class="registered">
+                        <div class="title">
+                            <div class="switch-btn" id="registeredSwitch"></div>
+                            Зарегистрирован в  <br/>последние 30 дней
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="title">
+                        <div class="switch-btn" id="onlineSwitch"></div>
+                        Сейчас онлайн
+                    </div>
+                    <div class="title">
+                        <div class="switch-btn" id="checkPhotoSwitch"></div>
+                        Только пользователи с фото
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="blackList">
+                        <div class="title">
+                            Черный список
+                        </div>
+                        <div class="subtitle">
+                            Список мужских ID, которые я хочу пропустить:
+                        </div>
+                        <input type="text" name="blackList" id="blackList" placeholder="Введите ID разделенные ;">
+
+                    </div>
+                    <div class="region">
+                        <div class="title">
+                            Регион мужчины
+                        </div>
+                            <form>
+                                <div class="__select">
+                                    <div class="__select__content">
+                                        <input id="singleSelect1" class="__select__input" type="checkbox" name="singleSelect" />
+                                        <label for="singleSelect1" class="__select__label arrow">Eastern Europe</label>
+                                        <div class="downArrowBlock"><img src="img/downarrow.svg" id="downArrow"></div>
+                                        <input id="singleSelect2" class="__select__input" type="checkbox" name="singleSelect" />
+                                        <label for="singleSelect2" class="__select__label">Western Europe</label>
+                                        <input id="singleSelect3" class="__select__input" type="checkbox" name="singleSelect" />
+                                        <label for="singleSelect3" class="__select__label">North America</label>
+                                        <input id="singleSelect4" class="__select__input" type="checkbox" name="singleSelect" />
+                                        <label for="singleSelect4" class="__select__label">Central and South America</label>
+                                        <input id="singleSelect5" class="__select__input" type="checkbox" name="singleSelect" />
+                                        <label for="singleSelect5" class="__select__label">Asia</label>
+                                        <input id="singleSelect6" class="__select__input" type="checkbox" name="singleSelect" />
+                                        <label for="singleSelect6" class="__select__label">Australia & New Zealand</label>
+                                        <input id="singleSelect7" class="__select__input" type="checkbox" name="singleSelect" />
+                                        <label for="singleSelect7" class="__select__label">Africa</label>
+                                        <input id="singleSelect8" class="__select__input" type="checkbox" name="singleSelect" />
+                                        <label for="singleSelect8" class="__select__label ">Former USSR (CIS) </label>
+                                    </div>
+                                </div>
+                            </form>
+                    </div>
+                    
+                </div>
+                <div class="row singleLine">
+                    <div class="limit">
+                        <input type="range" name="limit" id="limitInput" min="25" max="200" step="25" value="200" list="listData">
+                        <datalist id="listData">
+                            <option>25</option>
+                            <option>50</option>
+                            <option>75</option>
+                            <option>100</option>
+                            <option>125</option>
+                            <option>150</option>
+                            <option>175</option>
+                            <option>200</option>
+                        </datalist>
+                        <div class="numbers">
+                            <div class="number2 number">25</div>
+                            <div class="number3 number">50</div>
+                            <div class="number4 number">75</div>
+                            <div class="number5 number">100</div>
+                            <div class="number6 number">125</div>
+                            <div class="number7 number">150</div>
+                            <div class="number8 number">175</div>
+                            <div class="number9 number">200</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <button class="back checkButton">Назад</button>
+                    <button class="startWork checkButton">Начать рассылку</button>
+                </div>  
+            </div>   
+        </div>
+    </div>
+
+    <script src="popup.js"></script>
+</body>
+</html>
+
+
+

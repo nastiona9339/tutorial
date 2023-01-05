@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+  <g id="Icon_compose_country" transform="translate(0)" opacity="0.5">
+    <rect id="Area" width="16" height="16" transform="translate(0 0)" fill="#fcfcfc" opacity="0"/>
+    <g id="Icon" transform="translate(0 0)">
+      <path id="_182f512e-6dae-4fd0-9fa7-fc022271f7b9" data-name="182f512e-6dae-4fd0-9fa7-fc022271f7b9" d="M0,0H16V16H0Z" transform="translate(0 0)" fill="none"/>
+      <path id="dd7bd06b-1d03-4519-96e7-30434308a9bd" d="M14,8A6,6,0,1,1,8,2,6,6,0,0,1,14,8Z" transform="translate(0 0)" fill="none" stroke="#ff325a" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      <path id="_523d0921-f7d6-46cd-b1be-d799d133bd01" data-name="523d0921-f7d6-46cd-b1be-d799d133bd01" d="M2.4,6H13.6" transform="translate(0 0)" fill="none" stroke="#ff325a" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      <path id="bcc04269-91db-4a99-9da9-826579a7c02b" d="M2.4,10H13.6" transform="translate(0 0)" fill="none" stroke="#ff325a" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      <path id="_407dff16-6818-48c9-be88-997028d418c3" data-name="407dff16-6818-48c9-be88-997028d418c3" d="M7.667,2a11.331,11.331,0,0,0,0,12" transform="translate(0 0)" fill="none" stroke="#ff325a" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      <path id="ba318393-5ffb-4e16-a668-45df05696521" d="M8.333,2a11.331,11.331,0,0,1,0,12" transform="translate(0 0)" fill="none" stroke="#ff325a" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+    </g>
+  </g>
+</svg>
